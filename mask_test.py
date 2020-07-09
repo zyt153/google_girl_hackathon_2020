@@ -218,10 +218,10 @@ if __name__ == '__main__':
             print('detect result save to....:'+image_save_path)
             r_image.save(image_save_path)
             index += 1
-        else:
+        '''else:
             image_save_path = './static/mask_results/' + portion[1]       
             print('detect result save to....:'+image_save_path)
-            r_image.save(image_save_path)
+            r_image.save(image_save_path)'''
 
     time_sum = time.time() - t1
     file.write('time sum: '+str(time_sum)+'s') 
