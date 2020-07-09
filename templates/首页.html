@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="refresh" content="10">
+<style type="text/css">
+.beiyou
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:450px;
+	height:100px;
+}
+.tabbar
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background:rgb(155,211,239);
+	height:45px;
+	width:1423px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tabbar-block
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:100%;
+}
+.tabbar-block:hover{background:rgb(32,148,206);}
+.tabbar-font
+{
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+.news
+{
+	position:absolute;
+	left:0px;
+	top:190px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction:column;
+	width:1400px;
+}
+.border
+{
+	border:2px solid rgb(34,55,85);
+}
+.news-block
+{
+	height:300px;
+	width:85%;
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	margin-bottom:20px;
+}
+.news-left
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-direction:column;
+	height:90%;
+	width:15%;
+}
+.news-p
+{
+	width:80%;
+	height:80%;
+	padding:10px;
+}
+text.news-font
+{
+	font-size:30px;
+}
+.news-right
+{
+	display:flex;
+	align-items:flex-start;
+	justify-content: center;
+	flex-direction:column;
+	height:90%;
+	width:75%;
+}
+.news-title
+{
+	padding-left:20px;
+	height:12.5%;
+	line-height:30px;
+	width:95%;
+	border-bottom:1.5px dashed #778899;
+}
+.title-font
+{
+	text-decoration:none;
+	color:#696969;
+	font-size:16px;
+}
+.title-font:hover{color:#191970;}
+.title-p
+{
+	width:20px;
+	height:15px;
+	padding-right:20px;
+}
+
+</style>
+</head>
+
+<body>
+<div>
+	<img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }} class="beiyou"/>
+</div>
+<div class="tabbar">
+	<div class="tabbar-block" style="background:rgb(32,148,206);">
+		<a href="http://127.0.0.1:5000/welcome" class="tabbar-font">首页</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/mask" class="tabbar-font">口罩监测</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/density" class="tabbar-font">人流密度</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/report" class="tabbar-font">每日填报</a>
+	</div>
+</div>
+<div class="news">
+	<div class="news-block border">
+		<div class="news-left">
+			<a href="https://jwc.bupt.edu.cn/" target="_blank"><img src={{ url_for('static', filename= './images/教务处.png',_t=val1) }} class="news-p border"/></a>
+			<text class="news-font">教 务 处</text>
+		</div>
+		<div class="news-right">
+			<div class="news-title">
+				<a href={{variable.url1}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title1}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url2}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title2}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url3}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title3}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url4}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title4}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url5}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title5}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url6}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title6}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url7}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title7}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url8}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title8}}
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="news-block border">
+		<div class="news-left">
+			<a href="https://grs.bupt.edu.cn/" target="_blank"><img src={{ url_for('static', filename= './images/研究生院.png',_t=val1) }} class="news-p border"/></a>
+			<text class="news-font">研 究 生 院</text>
+		</div>
+		<div class="news-right">
+			<div class="news-title">
+				<a href={{variable.url9}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title9}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url0}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title10}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url11}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title11}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url12}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title12}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url13}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title13}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url14}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title14}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url15}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title15}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url16}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title16}}
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="news-block border">
+		<div class="news-left">
+			<a href="https://lib.bupt.edu.cn/index.html" target="_blank"><img src={{ url_for('static', filename= './images/图书馆.png',_t=val1) }} class="news-p border"/></a>
+			<text class="news-font">图 书 馆</text>
+		</div>
+		<div class="news-right">
+			<div class="news-title">
+				<a href={{variable.url17}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title17}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url18}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title18}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url19}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title19}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url20}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title20}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url21}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title21}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url22}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title22}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url23}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title23}}
+				</a>
+			</div>
+			<div class="news-title">
+				<a href={{variable.url24}} target="_blank" class="title-font">
+					<img src={{ url_for('static', filename= './images/右箭头.png',_t=val1) }} class="title-p"/>{{variable.title24}}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

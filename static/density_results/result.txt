@@ -1,0 +1,200 @@
+Ö÷Â¥.jpg detect_result£º
+find  8 target(s) 
+nomask  score: 0.32633853 
+location: top: 271¡¢ bottom: 306¡¢ left: 288¡¢ right: 313
+nomask  score: 0.33289674 
+location: top: 229¡¢ bottom: 296¡¢ left: 502¡¢ right: 545
+nomask  score: 0.38777483 
+location: top: 171¡¢ bottom: 235¡¢ left: 781¡¢ right: 830
+nomask  score: 0.4817071 
+location: top: 200¡¢ bottom: 291¡¢ left: 180¡¢ right: 246
+nomask  score: 0.6202549 
+location: top: 207¡¢ bottom: 278¡¢ left: 864¡¢ right: 910
+nomask  score: 0.6926113 
+location: top: 214¡¢ bottom: 276¡¢ left: 700¡¢ right: 741
+nomask  score: 0.7424627 
+location: top: 193¡¢ bottom: 263¡¢ left: 374¡¢ right: 429
+havemask  score: 0.3855553 
+location: top: 163¡¢ bottom: 246¡¢ left: 773¡¢ right: 838
+
+Í¼Êé¹Ý.jpg detect_result£º
+find  7 target(s) 
+nomask  score: 0.3496039 
+location: top: 68¡¢ bottom: 96¡¢ left: 123¡¢ right: 142
+nomask  score: 0.45916328 
+location: top: 66¡¢ bottom: 92¡¢ left: 168¡¢ right: 192
+nomask  score: 0.52337885 
+location: top: 52¡¢ bottom: 78¡¢ left: 218¡¢ right: 234
+havemask  score: 0.30019802 
+location: top: 69¡¢ bottom: 91¡¢ left: 68¡¢ right: 90
+havemask  score: 0.31124365 
+location: top: 83¡¢ bottom: 100¡¢ left: 346¡¢ right: 359
+havemask  score: 0.3521458 
+location: top: 66¡¢ bottom: 92¡¢ left: 168¡¢ right: 192
+havemask  score: 0.6609247 
+location: top: 79¡¢ bottom: 97¡¢ left: 266¡¢ right: 285
+
+Ñ§ÉúÊ³ÌÃ.jpg detect_result£º
+find  3 target(s) 
+havemask  score: 0.42667425 
+location: top: 120¡¢ bottom: 534¡¢ left: 899¡¢ right: 1126
+havemask  score: 0.43570352 
+location: top: 278¡¢ bottom: 484¡¢ left: 1167¡¢ right: 1338
+havemask  score: 0.6185173 
+location: top: 236¡¢ bottom: 440¡¢ left: 563¡¢ right: 751
+
+Ñ§Ô·³¬ÊÐ.jpg detect_result£º
+find  15 target(s) 
+nomask  score: 0.30542338 
+location: top: 367¡¢ bottom: 418¡¢ left: 928¡¢ right: 977
+nomask  score: 0.325233 
+location: top: 307¡¢ bottom: 376¡¢ left: 608¡¢ right: 655
+nomask  score: 0.35283667 
+location: top: 411¡¢ bottom: 484¡¢ left: 839¡¢ right: 895
+nomask  score: 0.3564122 
+location: top: 297¡¢ bottom: 347¡¢ left: 406¡¢ right: 445
+nomask  score: 0.36141 
+location: top: 365¡¢ bottom: 431¡¢ left: 310¡¢ right: 350
+nomask  score: 0.3660706 
+location: top: 401¡¢ bottom: 485¡¢ left: 348¡¢ right: 405
+nomask  score: 0.39213648 
+location: top: 294¡¢ bottom: 344¡¢ left: 532¡¢ right: 565
+nomask  score: 0.41767737 
+location: top: 357¡¢ bottom: 422¡¢ left: 1015¡¢ right: 1071
+nomask  score: 0.4346259 
+location: top: 409¡¢ bottom: 483¡¢ left: 500¡¢ right: 550
+nomask  score: 0.54716045 
+location: top: 336¡¢ bottom: 390¡¢ left: 846¡¢ right: 895
+nomask  score: 0.55888224 
+location: top: 311¡¢ bottom: 370¡¢ left: 480¡¢ right: 527
+nomask  score: 0.5684628 
+location: top: 475¡¢ bottom: 550¡¢ left: 1041¡¢ right: 1104
+nomask  score: 0.63663906 
+location: top: 465¡¢ bottom: 556¡¢ left: 223¡¢ right: 292
+nomask  score: 0.85796344 
+location: top: 450¡¢ bottom: 529¡¢ left: 579¡¢ right: 639
+nomask  score: 0.94524056 
+location: top: 452¡¢ bottom: 529¡¢ left: 425¡¢ right: 490
+
+½ÌÒ».jpg detect_result£º
+find  12 target(s) 
+nomask  score: 0.31799415 
+location: top: 194¡¢ bottom: 297¡¢ left: 818¡¢ right: 889
+nomask  score: 0.3457328 
+location: top: 151¡¢ bottom: 215¡¢ left: 33¡¢ right: 79
+nomask  score: 0.4169367 
+location: top: 217¡¢ bottom: 313¡¢ left: 241¡¢ right: 310
+nomask  score: 0.47427472 
+location: top: 304¡¢ bottom: 399¡¢ left: 302¡¢ right: 384
+nomask  score: 0.52486295 
+location: top: 280¡¢ bottom: 383¡¢ left: 694¡¢ right: 768
+nomask  score: 0.5453648 
+location: top: 184¡¢ bottom: 259¡¢ left: 669¡¢ right: 708
+nomask  score: 0.5950304 
+location: top: 109¡¢ bottom: 184¡¢ left: 620¡¢ right: 668
+nomask  score: 0.63623905 
+location: top: 220¡¢ bottom: 315¡¢ left: 552¡¢ right: 621
+nomask  score: 0.7473626 
+location: top: 180¡¢ bottom: 264¡¢ left: 925¡¢ right: 987
+havemask  score: 0.30280954 
+location: top: 128¡¢ bottom: 214¡¢ left: 693¡¢ right: 759
+havemask  score: 0.36455098 
+location: top: 458¡¢ bottom: 786¡¢ left: 428¡¢ right: 666
+havemask  score: 0.53060496 
+location: top: 105¡¢ bottom: 194¡¢ left: 613¡¢ right: 669
+
+½ÌÈý.jpg detect_result£º
+find  21 target(s) 
+nomask  score: 0.34929022 
+location: top: 169¡¢ bottom: 218¡¢ left: 491¡¢ right: 519
+nomask  score: 0.36100677 
+location: top: 242¡¢ bottom: 287¡¢ left: 508¡¢ right: 539
+nomask  score: 0.3635971 
+location: top: 208¡¢ bottom: 244¡¢ left: 435¡¢ right: 460
+nomask  score: 0.3704199 
+location: top: 199¡¢ bottom: 251¡¢ left: 596¡¢ right: 621
+nomask  score: 0.3809394 
+location: top: 339¡¢ bottom: 394¡¢ left: 831¡¢ right: 878
+nomask  score: 0.3844272 
+location: top: 209¡¢ bottom: 239¡¢ left: 427¡¢ right: 447
+nomask  score: 0.3863154 
+location: top: 228¡¢ bottom: 266¡¢ left: 105¡¢ right: 130
+nomask  score: 0.42818865 
+location: top: 274¡¢ bottom: 316¡¢ left: 315¡¢ right: 342
+nomask  score: 0.45539346 
+location: top: 238¡¢ bottom: 290¡¢ left: 1106¡¢ right: 1150
+nomask  score: 0.4621888 
+location: top: 334¡¢ bottom: 399¡¢ left: 388¡¢ right: 430
+nomask  score: 0.4879314 
+location: top: 248¡¢ bottom: 292¡¢ left: 803¡¢ right: 833
+nomask  score: 0.5028181 
+location: top: 242¡¢ bottom: 292¡¢ left: 787¡¢ right: 820
+nomask  score: 0.5954873 
+location: top: 199¡¢ bottom: 240¡¢ left: 388¡¢ right: 414
+nomask  score: 0.610195 
+location: top: 229¡¢ bottom: 270¡¢ left: 116¡¢ right: 142
+nomask  score: 0.62246233 
+location: top: 286¡¢ bottom: 348¡¢ left: 972¡¢ right: 1019
+nomask  score: 0.6262951 
+location: top: 167¡¢ bottom: 191¡¢ left: 698¡¢ right: 717
+nomask  score: 0.7006673 
+location: top: 230¡¢ bottom: 268¡¢ left: 1016¡¢ right: 1045
+nomask  score: 0.76571345 
+location: top: 179¡¢ bottom: 207¡¢ left: 782¡¢ right: 805
+nomask  score: 0.78845596 
+location: top: 235¡¢ bottom: 268¡¢ left: 1112¡¢ right: 1141
+nomask  score: 0.8502387 
+location: top: 210¡¢ bottom: 242¡¢ left: 939¡¢ right: 968
+havemask  score: 0.3278114 
+location: top: 265¡¢ bottom: 320¡¢ left: 218¡¢ right: 261
+
+½Ì¶þ.jpg detect_result£º
+find  3 target(s) 
+nomask  score: 0.6428022 
+location: top: 143¡¢ bottom: 198¡¢ left: 359¡¢ right: 395
+nomask  score: 0.75100505 
+location: top: 136¡¢ bottom: 181¡¢ left: 142¡¢ right: 189
+havemask  score: 0.34238216 
+location: top: 162¡¢ bottom: 201¡¢ left: 361¡¢ right: 393
+
+½ÌËÄ.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.41414174 
+location: top: 71¡¢ bottom: 364¡¢ left: 217¡¢ right: 429
+
+½Ì¹¤²ÍÌü.jpg detect_result£º
+find  5 target(s) 
+nomask  score: 0.32483798 
+location: top: 296¡¢ bottom: 382¡¢ left: 1925¡¢ right: 1979
+havemask  score: 0.34534112 
+location: top: 267¡¢ bottom: 400¡¢ left: 1048¡¢ right: 1187
+havemask  score: 0.35804743 
+location: top: 266¡¢ bottom: 410¡¢ left: 500¡¢ right: 605
+havemask  score: 0.3621804 
+location: top: 254¡¢ bottom: 399¡¢ left: 1449¡¢ right: 1539
+havemask  score: 0.72710085 
+location: top: 331¡¢ bottom: 511¡¢ left: 1337¡¢ right: 1499
+
+Ô¡ÊÒ.jpg detect_result£º
+find  4 target(s) 
+nomask  score: 0.38509995 
+location: top: 186¡¢ bottom: 267¡¢ left: 628¡¢ right: 688
+nomask  score: 0.44796535 
+location: top: 183¡¢ bottom: 267¡¢ left: 456¡¢ right: 514
+nomask  score: 0.7440453 
+location: top: 188¡¢ bottom: 271¡¢ left: 842¡¢ right: 910
+nomask  score: 0.7574525 
+location: top: 184¡¢ bottom: 270¡¢ left: 127¡¢ right: 192
+
+×ÛºÏÊ³ÌÃ.jpg detect_result£º
+find  4 target(s) 
+nomask  score: 0.33484206 
+location: top: 29¡¢ bottom: 73¡¢ left: 60¡¢ right: 88
+nomask  score: 0.53212017 
+location: top: 41¡¢ bottom: 96¡¢ left: 136¡¢ right: 170
+nomask  score: 0.8365774 
+location: top: 45¡¢ bottom: 68¡¢ left: 62¡¢ right: 86
+nomask  score: 0.8529568 
+location: top: 45¡¢ bottom: 70¡¢ left: 242¡¢ right: 267
+
+time sum: 38.78026485443115s

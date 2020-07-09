@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .login .form {
+            background-color: #a50205;
+        }
+
+        .login .form .inner {
+            height: 500px;
+            background-image: url(./static/images/众志成城.jpg);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .login .form .inner form {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid #a50205;
+            padding: 0 20px;
+        }
+
+        .login .form .inner form label {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .login .form .inner form input[type=text],
+        .login .form .inner form input[type=password] {
+            height: 50px;
+            width: 250px;
+        }
+
+        .login .form .inner form input[type=submit] {
+            background-color: #6096e6;
+            color: white;
+            border: none;
+            padding: 10px 50px;
+            font-size: 30px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="logo container">
+            <img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }}>
+        </div>
+        <div class="form">
+            <div class="inner container">
+                <form method="get" action='/login'>
+                    <div style="text-align: center;font-size:28px;">
+                        <div style="margin-bottom: 30px;">
+                            <img src={{ url_for('static', filename= './images/欢迎登录.jpg',_t=val1) }} alt="">
+                        </div>
+                        <label>学号：<input type="text" name="user" value=""></label><br>
+                        <label>密码：<input type="password" name="password" value=""></label><br>
+                        <input type="submit" value="登录">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

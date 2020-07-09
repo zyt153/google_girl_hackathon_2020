@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<style type="text/css">
+
+.beiyou
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:450px;
+	height:100px;
+}
+.tabbar
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background:rgb(155,211,239);
+	height:45px;
+	width:1423px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tabbar-block
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:100%;
+}
+.tabbar-block:hover{background:rgb(32,148,206);}
+.tabbar-font
+{
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+.report
+{
+	position:absolute;
+	left:200px;
+	top:190px;
+	display:flex;
+	align-items: center;
+	justify-content:flex-start;
+	flex-direction:column;
+	width:1000px;
+	height:1200px;
+	border:2px dashed rgb(32,148,206);
+	margin-bottom:150px;
+}
+.report-block
+{
+	width:40%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	flex-direction:column;
+	margin-top:30px;
+}
+.line
+{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	font-size:18px;
+	line-height:35px;
+	padding:15px;
+}
+.opt
+{
+	font-size:16px;
+	width:60%; 
+	height:30px;
+}
+.opt-time
+{
+	font-size:16px;
+	width:20%; 
+	height:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+	<img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }} class="beiyou"/>
+</div>
+
+<div class="tabbar">
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/welcome" class="tabbar-font">首页</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/mask" class="tabbar-font">口罩监测</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/density" class="tabbar-font">人流密度</a>
+	</div>
+	<div class="tabbar-block"  style="background:rgb(32,148,206);">
+		<a href="http://127.0.0.1:5000/report" class="tabbar-font">每日填报</a>
+	</div>
+</div>
+
+<form method="get" action='/reportuser'>
+	<div class="report">
+		<div class="report-block">
+			<div class="line">请同学们认真完成每日填报~！</div>
+			
+			<div class="line">学 号 <input type="number" name="user" value="" class="opt" /></div>
+			
+			<div class="line">姓 名 <input type="text" name="name1" value="" class="opt"/></div>
+			
+			
+			<div class="line">今日体温
+				<select name="temperature"  class="opt" data-form="formed">
+					<option value ="35℃以下">35℃以下</option>
+					<option value ="35-36.5℃">35-36.5℃</option>
+					<option value ="35℃-36.5℃">35℃-36.5℃</option>
+					<option value ="36.6℃-36.9℃">36.6℃-36.9℃</option>
+					<option value ="37.0℃-37.3℃">37.0℃-37.3℃</option>
+					<option value ="37.4℃-38.0℃">37.4℃-38.0℃</option>
+					<option value ="38.1℃-38.5℃">38.1℃-38.5℃</option>
+					<option value ="38.5℃以上">38.5℃以上</option>
+				</select>
+			</div>
+					
+			<div class="line">申请出校<select name="goOut" class="opt" data-form="formed"><option value ="否">否</option><option value ="是">是</option></select></div>
+		
+			<div class="line">离校原因<input type="text" name="where" value="" class="opt" /></div>
+						
+			<div class="line">具体行程（时间-地点）</div>
+			
+			<div class="line">1
+			<input type="time" name="time1" oninput="value=value.replace(/[^\d{1,}\：\d{1,}\:\d{1,}|\d{1,}]/g,'')" class="opt-time" />
+			<input type="text" name="route1" value="" class="opt" />
+			</div>
+			
+			<div class="line">2
+			<input type="time" name="time2" oninput="value=value.replace(/[^\d{1,}\：\d{1,}\:\d{1,}|\d{1,}]/g,'')" class="opt-time" />
+			<input type="text" name="route2" value="" class="opt" />
+			
+			</div>
+			
+			<div class="line">3
+			<input type="time" name="time3" oninput="value=value.replace(/[^\d{1,}\：\d{1,}\:\d{1,}|\d{1,}]/g,'')" class="opt-time" />
+			<input type="text" name="route3" value="" class="opt" />
+			</div>
+			
+			<div class="line">4
+			<input type="time" name="time4" oninput="value=value.replace(/[^\d{1,}\：\d{1,}\:\d{1,}|\d{1,}]/g,'')" class="opt-time" />
+			<input type="text" name="route4" value="" class="opt" />
+			</div>
+			
+			<div class="line">5
+			<input type="time" name="time5" oninput="value=value.replace(/[^\d{1,}\：\d{1,}\:\d{1,}|\d{1,}]/g,'')" class="opt-time" />
+			<input type="text" name="route5" value="" class="opt" />
+			</div>
+			
+			<input type="submit" value="提交" style="width:80px; height:40px;margin-top:50px;">
+		</div>
+
+	</div>			
+</form>
+
+
+</body>
+</html>

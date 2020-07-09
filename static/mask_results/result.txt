@@ -1,0 +1,82 @@
+1.jpg detect_result£º
+find  1 target(s) 
+havemask  score: 0.8241719 
+location: top: 217¡¢ bottom: 631¡¢ left: 203¡¢ right: 448
+
+10.jpg detect_result£º
+find  2 target(s) 
+nomask  score: 0.35236079 
+location: top: 94¡¢ bottom: 237¡¢ left: 278¡¢ right: 405
+nomask  score: 0.69046634 
+location: top: 93¡¢ bottom: 237¡¢ left: 405¡¢ right: 533
+
+11.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.46830842 
+location: top: 100¡¢ bottom: 435¡¢ left: 188¡¢ right: 387
+
+12.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.425346 
+location: top: 53¡¢ bottom: 350¡¢ left: 256¡¢ right: 455
+
+13.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.9101443 
+location: top: 68¡¢ bottom: 242¡¢ left: 155¡¢ right: 313
+
+14.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.8493996 
+location: top: 64¡¢ bottom: 222¡¢ left: 220¡¢ right: 335
+
+15.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.7616027 
+location: top: 184¡¢ bottom: 405¡¢ left: 342¡¢ right: 538
+
+2.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.5540656 
+location: top: 133¡¢ bottom: 347¡¢ left: 304¡¢ right: 468
+
+3.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.35781994 
+location: top: 157¡¢ bottom: 371¡¢ left: 277¡¢ right: 452
+
+4.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.555643 
+location: top: 42¡¢ bottom: 206¡¢ left: 238¡¢ right: 352
+
+5.jpg detect_result£º
+find  1 target(s) 
+havemask  score: 0.95420665 
+location: top: 280¡¢ bottom: 468¡¢ left: 229¡¢ right: 381
+
+6.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.643458 
+location: top: 141¡¢ bottom: 256¡¢ left: 89¡¢ right: 203
+
+7.jpg detect_result£º
+find  1 target(s) 
+nomask  score: 0.60233706 
+location: top: 64¡¢ bottom: 216¡¢ left: 260¡¢ right: 382
+
+8.jpg detect_result£º
+find  2 target(s) 
+havemask  score: 0.4033059 
+location: top: 156¡¢ bottom: 511¡¢ left: 1019¡¢ right: 1268
+havemask  score: 0.6473887 
+location: top: 322¡¢ bottom: 535¡¢ left: 650¡¢ right: 821
+
+9.jpg detect_result£º
+find  2 target(s) 
+nomask  score: 0.41707292 
+location: top: 152¡¢ bottom: 339¡¢ left: 986¡¢ right: 1204
+havemask  score: 0.74310905 
+location: top: 75¡¢ bottom: 246¡¢ left: 1185¡¢ right: 1344
+
+time sum: 54.48962593078613s

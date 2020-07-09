@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<style type="text/css">
+
+.beiyou
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:450px;
+	height:100px;
+}
+.tabbar
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background:rgb(155,211,239);
+	height:45px;
+	width:1423px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tabbar-block
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:100%;
+}
+.tabbar-block:hover{background:rgb(32,148,206);}
+.tabbar-font
+{
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+.report
+{
+	position:absolute;
+	left:0px;
+	top:190px;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction:column;
+	width:100%;
+	font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+	<img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }} class="beiyou"/>
+</div>
+
+<div class="tabbar">
+	<div class="tabbar-block" style="background:rgb(32,148,206);">
+		<a href="http://127.0.0.1:5000/welcome" class="tabbar-font">首页</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/mask" class="tabbar-font">口罩监测</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/density" class="tabbar-font">人流密度</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/report" class="tabbar-font">每日填报</a>
+	</div>
+</div>
+
+<div class="report">
+	<p>提交失败！请重新填写！</p>
+</div>
+
+</body>
+</html>

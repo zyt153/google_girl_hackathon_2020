@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<style type="text/css">
+.beiyou
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:450px;
+	height:100px;
+}
+.tabbar
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background:rgb(155,211,239);
+	height:45px;
+	width:1423px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tabbar-block
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:100%;
+}
+.tabbar-block:hover{background:rgb(32,148,206);}
+.tabbar-font
+{
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+.dens-flex
+{
+	position:absolute;
+	left:70px;
+	top:250px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:1300px;
+	margin-bottom:50px;
+}
+div.map
+{
+	width:45%;
+	height:1000px;
+	padding:25px;
+	margin-right:10px;
+	border:2px dashed rgb(32,148,206);
+}
+img.map
+{
+	width:100%;
+	height:1000px;
+}
+.dens
+{
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction:column;
+	width:45%;
+	height:1000px;
+	padding:10px;
+	background-color:white;
+}
+.dens-title
+{
+	font-size:25px;
+	padding:10px;
+}
+.dens-waring
+{
+	color:red;
+	font-size:16px;
+}
+.dens-block
+{
+	height:130px;
+	width:95%;
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	margin-top:20px;
+}
+.block-left,.block-right
+{
+	width:45%;
+	height:100%;
+	border:2px dashed rgb(32,148,206);
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+}
+div.left
+{
+	width:20%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction:column;
+	padding-right:5px;
+	border-right:2px dashed rgb(32,148,206);
+}
+img.left
+{
+	width:80%;
+	height:30%;
+	margin-bottom:10px;
+	border:1px solid rgb(32,148,206);
+	border-radius:20%;
+	background-color:rgb(32,148,206);
+}
+b.left
+{
+	margin:5px;
+	font-size:16px;
+}
+div.right
+{
+	width:70%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	color:#191970;
+}
+p.right
+{
+	line-height:20px;
+	font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<div>
+	<img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }} class="beiyou"/>
+</div>
+<div class="tabbar">
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/welcome" class="tabbar-font">首页</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/mask" class="tabbar-font">口罩监测</a>
+	</div>
+	<div class="tabbar-block" style="background:rgb(32,148,206);">
+		<a href="http://127.0.0.1:5000/density" class="tabbar-font">人流密度</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/report" class="tabbar-font">每日填报</a>
+	</div>
+</div>
+<div class="dens-flex">
+	<div class="map">
+		<img src={{ url_for('static', filename= './images/地图-1.png',_t=val1) }} class="map"/>
+	</div>
+	<div class="dens">
+		<div class="dens-title">实时人流密度</div>
+		<div class="dens-waring">高峰时期建议同学们减少出行哦~</div>
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/食堂.png',_t=val1) }} class="left"/><b>综合<br/>食堂</b></div>
+				<div class="right"><p class="right">开放时间：07:00~21:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.zongheshitang}}</p>
+				</div>
+			</div>
+			<div class="block-right">
+				<div class="left"><img src={{ url_for('static', filename= './images/食堂.png',_t=val1) }} class="left"/><b>教工<br/>餐厅</b></div>
+				<div class="right"><p class="right">开放时间：07:00~21:00<br/><br/>人流密度:</p>
+				<p style="font-size:30px; color:orange">{{variable.jiaogongcanting}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/食堂.png',_t=val1) }} class="left"/><b>学生<br/>食堂</b></div>
+				<div class="right"><p class="right">开放时间：07:00~21:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.xueshengshitang}}</p>
+				</div>
+			</div>
+			<div class="block-right">
+				<div class="left"><img src={{ url_for('static', filename= './images/超市.png',_t=val1) }} class="left"/><b>学苑<br/>超市</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.xueyuanchaoshi}}</p>
+				</div>
+			</div>
+		</div>		
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/澡堂.png',_t=val1) }} class="left"/><b>澡堂</b></div>
+				<div class="right"><p class="right">开放时间：15:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.zaotang}}</p>
+				</div>
+			</div>
+			<div class="block-right">
+				<div class="left"><img src={{ url_for('static', filename= './images/图书馆-1.png',_t=val1) }} class="left"/><b>图书馆</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.tushuguan}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/教学楼.png',_t=val1) }} class="left"/><b>主楼</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.zhulou}}</p>
+				</div>
+			</div>
+			<div class="block-right">
+				<div class="left"><img src={{ url_for('static', filename= './images/教学楼.png',_t=val1) }} class="left"/><b>教一</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.j1}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/教学楼.png',_t=val1) }} class="left"/><b>教二</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.j2}}</p>
+				</div>
+			</div>
+			<div class="block-right">
+				<div class="left"><img src={{ url_for('static', filename= './images/教学楼.png',_t=val1) }} class="left"/><b>教三</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.j3}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="dens-block">
+			<div class="block-left">
+				<div class="left"><img src={{ url_for('static', filename= './images/教学楼.png',_t=val1) }} class="left"/><b>教四</b></div>
+				<div class="right"><p class="right">开放时间：07:00~23:00<br/><br/>人流密度：</p>
+				<p style="font-size:30px; color:orange">{{variable.j4}}</p>
+				</div>
+			</div>
+			<div class="block-right"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

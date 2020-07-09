@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+.beiyou
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	width:450px;
+	height:100px;
+}
+.tabbar
+{
+	display:flex;
+	align-items: center;
+	justify-content:space-around;
+	background:rgb(155,211,239);
+	height:45px;
+	width:1423px;
+	position:absolute;
+	left:0px;
+	top:120px;
+}
+.tabbar-block
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:25%;
+	height:100%;
+}
+.tabbar-block:hover{background:rgb(32,148,206);}
+.tabbar-font
+{
+	font-size:20px;
+	color:white;
+	text-decoration:none;
+}
+.flex
+{
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction:column;
+	position:absolute;
+	left:70px;
+	top:200px;
+	width:1300px;
+	height:1000px;
+	margin-bottom:50px;
+}
+.title
+{
+	height:75px;
+	font-size:20px;
+	color:#696969;
+}
+div.pics
+{
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.pic
+{
+	width:15%;
+	height:150px;
+	padding:10px;
+	margin:15px;
+	border:2px dashed rgb(32,148,206);
+}
+
+.zhezhao{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background:rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+.tankuang{
+	position: relative;
+	background-color:rgba(155,211,239,0.85);
+	width: 30%;
+	height:30%;
+	border-radius: 10px;
+	margin: 20% auto;
+}
+#header{
+	height:100%;
+	padding-left:20px;
+	padding-right:20px;
+	display:flex;
+	align-items: center;
+	justify-content:flex-start;
+	flex-direction:column;
+	color:#191970;
+	font-size:15px;
+}
+#header-p{
+	line-height:23px;
+	margin-top:20%;
+}
+#header-button{
+	margin-top:10%;
+	padding:10px;
+	background-color:rgb(32,148,206);
+	border-radius: 5px;
+	color:white;
+	border:none;
+}
+#header-right{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+	background: red;
+	color: #fff;
+	right: 5px;
+	top: 5px;
+	text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<div>
+	<img src={{ url_for('static', filename= './images/北邮校徽.png',_t=val1) }} class="beiyou"/>
+</div>
+<div class="tabbar">
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/welcome" class="tabbar-font">首页</a>
+	</div>
+	<div class="tabbar-block" style="background:rgb(32,148,206);">
+		<a href="http://127.0.0.1:5000/mask" class="tabbar-font">口罩监测</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/density" class="tabbar-font">人流密度</a>
+	</div>
+	<div class="tabbar-block">
+		<a href="http://127.0.0.1:5000/report" class="tabbar-font">每日填报</a>
+	</div>
+</div>
+<div class="flex">
+	<p class="title">以下为今日校园中未带口罩的同学们，请大家予以警惕，疫情期间不要放松哦！<br/>（若发现是本人，认真反省后，可点击头像认错）</p>
+	<div class="pics">
+		<img src={{ url_for('static', filename= './mask_results/result_1.jpg',_t=val1) }} class="pic" onclick="dianji()"/>
+		<img src={{ url_for('static', filename= './mask_results/result_2.jpg',_t=val1) }} class="pic" onclick="dianji()"/>
+		<img src={{ url_for('static', filename= './mask_results/result_3.jpg',_t=val1) }} class="pic" onclick="dianji()"/>
+		<img src={{ url_for('static', filename= './mask_results/result_4.jpg',_t=val1) }} class="pic" onclick="dianji()"/>
+		<img src={{ url_for('static', filename= './mask_results/result_5.jpg',_t=val1) }} class="pic" onclick="dianji()"/>
+	</div>
+	<div class="pics">
+		<img src={{ url_for('static', filename= './mask_results/result_6.jpg',_t=val1) }} class="pic"/>
+		<img src={{ url_for('static', filename= './mask_results/result_7.jpg',_t=val1) }} class="pic"/>
+		<img src={{ url_for('static', filename= './mask_results/result_8.jpg',_t=val1) }} class="pic"/>
+		<img src={{ url_for('static', filename= './mask_results/result_9.jpg',_t=val1) }} class="pic"/>
+		<img src={{ url_for('static', filename= './mask_results/result_10.jpg',_t=val1) }} class="pic"/>
+	</div>
+</div>
+<div class="zhezhao" id='zhezhao'>
+	<div class="tankuang">
+		<div id="header">
+			<span id="header-p">我是XX同学，今天我在校园中没有戴口罩，我认为自己的行为不好，我会认真反省，并保证以后佩戴口罩！</span>
+			
+			<script>
+    			function jump(){
+        			window.location.href="http://127.0.0.1:5000/maskRemove";
+    			}
+			</script>
+
+			<button type="button" id="header-button" onclick=javascrtpt:jump()>我知错了</button>
+			<div id="header-right" onclick="hidder()">x</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	document.getElementById('zhezhao').style.display="none";
+		function dianji(){
+			document.getElementById('zhezhao').style.display="";
+		}
+		function hidder(){
+			document.getElementById('zhezhao').style.display="none";
+		}
+</script>
+</body>
+</html>
