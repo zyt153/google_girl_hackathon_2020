@@ -168,18 +168,27 @@ def doSth():
                 ip_port = 'secondtransfer.moguproxy.com:9001'
                 proxy = {"http": "http://" + ip_port, "https": "https://" + ip_port}
 
-                r = requests.get(url_new, headers=headers2, cookies=cookies,timeout=None, proxies=proxy, verify=False, allow_redirects=False)
-                #print(r)
-                while r.status_code == 502:
-                    time.sleep(10)
+                while True:  # 一直循环，直到访问站点成功
+                    try:
+                        # 以下except都是用来捕获当requests请求出现异常时，
+                        # 通过捕获然后等待网络情况的变化，以此来保护程序的不间断运行
+                        r = requests.get(url_new, headers=headers2, timeout=None, proxies=proxy, verify=False,
+                                         allow_redirects=False)
+                        break
+                    except requests.exceptions.ProxyError:
+                        print('ProxyError -- please wait 3 seconds')
+                        time.sleep(3)
+                    except requests.exceptions.ChunkedEncodingError:
+                        print('ChunkedEncodingError -- please wait 3 seconds')
+                        time.sleep(3)
+                    except:
+                        print('Unfortunitely -- An Unknow Error Happened, Please wait 3 seconds')
+                        time.sleep(3)
+
+                while r.status_code != 200:
+                    time.sleep(3)
                     r = requests.get(url_new, headers=headers2, cookies=cookies, timeout=None, proxies=proxy,
                                      verify=False, allow_redirects=False)
-
-                if r.status_code == 302 or r.status_code == 301:
-                    loc = r.headers['Location']
-                    print(loc)
-                    url_f = url_new + loc
-                    r = requests.get(url_f, headers=headers2, timeout=None, proxies=proxy, verify=False, allow_redirects=False)
 
                 '''#创建"i.txt"文件
                 i_str = str(i)
