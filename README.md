@@ -37,6 +37,11 @@ Single image detection: `python3 yolo_video.py [OPTIONS...] --image`
 
 Single video detection: `python3 yolo_video.py [video_path] [output_path (optional)]`
 
+**Examples of test results:**
+
+<img src="https://github.com/zyt153/google_girl_hackathon_2020/blob/master/static/mask_results/1.jpg" width = 30% height = 30% />
+<img src="https://github.com/zyt153/google_girl_hackathon_2020/blob/master/static/mask_results/result_3.jpg" width = 30% height = 30% />
+
 **mask_test.py** can batch detect and save the mask information in the picture.
 
 Place the picture to be detected in the **mask** folder, and the result after detection will be stored in **static\mask_results**.
